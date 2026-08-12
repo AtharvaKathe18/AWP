@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Registration Successful</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body style="background:url('background.jpg') no-repeat center center/cover; height:100vh;">
+
+<div class="success-container">
+
+<h1>Registration Successfully Submitted</h1>
+
+<table>
+
+<tr>
+<th>Field</th>
+<th>Details</th>
+</tr>
+
+<tr>
+<td>Name</td>
+<td id="name"></td>
+</tr>
+
+<tr>
+<td>Roll Number</td>
+<td id="roll"></td>
+</tr>
+
+<tr>
+<td>Email</td>
+<td id="email"></td>
+</tr>
+
+<tr>
+<td>Age</td>
+<td id="age"></td>
+</tr>
+
+<tr>
+<td>Phone Number</td>
+<td id="phone"></td>
+</tr>
+
+<tr>
+<td>Gender</td>
+<td id="gender"></td>
+</tr>
+
+<tr>
+<td>Course</td>
+<td id="course"></td>
+</tr>
+
+<tr>
+<td>Address</td>
+<td id="address"></td>
+</tr>
+
+</table>
+
+</div>
+
+<script>
+
+const data=JSON.parse(localStorage.getItem("studentData"));
+
+document.getElementById("name").innerHTML=data.name;
+document.getElementById("roll").innerHTML=data.roll;
+document.getElementById("email").innerHTML=data.email;
+document.getElementById("age").innerHTML=data.age;
+document.getElementById("phone").innerHTML=data.phone;
+document.getElementById("gender").innerHTML=data.gender;
+document.getElementById("course").innerHTML=data.course;
+document.getElementById("address").innerHTML=data.address;
+
+</script>
+
+</body>
+</html>
